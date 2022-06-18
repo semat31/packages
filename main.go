@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	currencyFmt "packages/fmt"
 	"packages/store"
 )
 
@@ -10,5 +11,5 @@ func main() {
 
 	fmt.Println("Name:", product.Name)
 	fmt.Println("Category:", product.Category)
-	fmt.Println("Price:", product.Price())
+	fmt.Println("Price:", currencyFmt.ToCurrency(product.Price()))
 }
