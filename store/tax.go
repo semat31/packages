@@ -5,9 +5,16 @@ const minThreshold = 10
 
 // categoryMaxPrice ...
 var categoryMaxPrice = map[string]float64{
-	"Watersports": 250 + (250 * defaultTaxRate),
-	"Soccer":      150 + (150 * defaultTaxRate),
-	"Chess":       50 + (50 * defaultTaxRate),
+	"Watersports": 250,
+	"Soccer":      150,
+	"Chess":       50,
+}
+
+//
+func init() {
+	for category, price := range categoryMaxPrice {
+		categoryMaxPrice[category] = price + (price * defaultTaxRate)
+	}
 }
 
 // taxRate ...
