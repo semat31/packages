@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	_ "packages/data"
 	currencyFmt "packages/fmt"
 	"packages/store"
 	"packages/store/cart"
