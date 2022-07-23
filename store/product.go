@@ -2,7 +2,7 @@
 // commonly required for online sales
 package store
 
-// standardTax standerd tax and threshold
+// standardTax standard tax and threshold
 var standardTax = newTaxRate(0.25, 20)
 
 // Product describes an item for sale
